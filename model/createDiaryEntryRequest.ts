@@ -35,6 +35,10 @@ export class CreateDiaryEntryRequest {
     * Description
     */
     'description': string;
+    /**
+    * Workflow id
+    */
+    'workflowId'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -67,6 +71,11 @@ export class CreateDiaryEntryRequest {
         {
             "name": "description",
             "baseName": "description",
+            "type": "string"
+        },
+        {
+            "name": "workflowId",
+            "baseName": "workflowId",
             "type": "string"
         }    ];
 
